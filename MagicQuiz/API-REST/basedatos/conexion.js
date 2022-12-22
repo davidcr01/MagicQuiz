@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const conexion = async() => {
     try{
-        await mongoose.connect("mongodb+srv://javier:javier@class4all.oiv8ety.mongodb.net/C4A?retryWrites=true&w=majority", {keepAlive: true, keepAliveInitialDelay: 300000});
-        console.log("Conectado a la base de datos");
+        await mongoose.connect("mongodb+srv://dacal01:bXtb3ZbRIHSLFi5v@cluster0.dkffqmt.mongodb.net/test", {keepAlive: true, keepAliveInitialDelay: 300000});
+        console.log("Conectado a la base de datos de MagicQuiz");
         
     }catch(error){
         console.log(error);
