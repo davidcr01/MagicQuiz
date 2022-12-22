@@ -4,8 +4,7 @@ import React,{useEffect,useState} from 'react'
 import {ContextoRol} from './contexto/Roles';
 import {RouterAdmins} from './routing/RouterAdmins.js';
 import {RouterInicioSesion} from './routing/RouterInicioSesion.js';
-import {RouterAlumnos} from './routing/RouterAlumnos.js';
-import {RouterProfesores} from './routing/RouterProfesores.js';
+import {RouterUsuarios} from './routing/RouterUsuarios.js';
 import Cookies from 'universal-cookie';
 import { isCookieSet } from './interfaces/cookies';
 
@@ -17,7 +16,7 @@ function App() {
   const ChangeRol = () => {
     switch(cookie){
       case "Administrador":
-      case "Alumno":
+      case "Usuario":
       case "Profesor":
         setRol(cookie);
         break;
@@ -57,7 +56,7 @@ function App() {
   return (
     <div>
       <ContextoRol.Provider value={{setCookie}}>
-        {rol === 'Administrador' ? (<RouterAdmins/>) : (rol === 'Alumno' ? (<RouterAlumnos/>) : (rol === 'Profesor' ? (<RouterProfesores/>) : (<RouterInicioSesion />)))}
+        {rol === 'Administrador' ? (<RouterAdmins/>) : (rol === 'Usuario' ? (<RouterUsuarios/>) : (<RouterInicioSesion />))}
       </ContextoRol.Provider>
       
       
