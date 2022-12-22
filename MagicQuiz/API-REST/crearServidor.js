@@ -14,15 +14,15 @@ function crearSevidor() {
 
     //Crear rutas pruebas
 
-    const rutas_usuario = require('./rutas/usuario');
-    const rutas_menu = require('./rutas/menu');
-    const rutas_tarea = require('./rutas/tareasDia');
-    const rutas_material = require('./rutas/material');
+    //const rutas_usuario = require('./rutas/usuario');
+    //const rutas_menu = require('./rutas/menu');
+    //const rutas_tarea = require('./rutas/tareasDia');
+    //const rutas_material = require('./rutas/material');
 
-    app.use("/api/usuarios", rutas_usuario);
-    app.use("/api/menus", rutas_menu);
-    app.use("/api/tareas", rutas_tarea);
-    app.use("/api/materials", rutas_material);
+    //app.use("/api/usuarios", rutas_usuario);
+    //app.use("/api/menus", rutas_menu);
+    //app.use("/api/tareas", rutas_tarea);
+    //app.use("/api/materials", rutas_material);
 
     return app;
 }
