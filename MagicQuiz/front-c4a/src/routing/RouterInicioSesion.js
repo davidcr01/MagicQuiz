@@ -10,10 +10,7 @@ export const RouterInicioSesion = () => {
         <BrowserRouter>
 
         <Routes>
-            <Route path="/" element={<SesionAlumnosClases />} />
-            <Route path="/sesion-alumnos-clases" element={<SesionAlumnosClases/>} />
-            <Route path="/sesion-alumnos" element={<SesionAlumnos/>} />
-            <Route path="/sesion-profesores" element={<SesionProfesores/>} />
+            <Route path="/" element={<SesionProfesores />} />
             <Route path="*" element={<><h1>404 Inicio Sesión</h1></>}  />
             {/* <Route path="/otra-pagina" element={<OtraPagina />} /> */}
         </Routes>
