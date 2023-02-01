@@ -65,7 +65,7 @@ const Header = (props) => {
 
     return (
         <header>
-            <h1 className="titulo_admins">{props.titulo}</h1>
+            <h1>{props.titulo}</h1>
             <CerrarSesionBoton/>
         </header>
     );

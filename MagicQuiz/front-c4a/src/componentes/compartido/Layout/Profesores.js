@@ -70,7 +70,7 @@ const Profesores = (props) => {
     //Da warning
     prueba.push(
         <div className="formregistro">
-            <form className="formulario" onSubmit={handleSubmit} action="#">
+            {/* <form className="formulario" onSubmit={handleSubmit} action="#"> */}
                 {/* <label htmlFor="fname" style={{ fontWeight: "bold" }}>Usuario:</label><br /> */}
                 {/* <input type="text" id="fname" name="fname" onChange={handleUsername}></input><br /><br /> */}
                 {/* <label htmlFor="password" style={{ fontWeight: "bold" }}>Contraseña:</label><br /> */}
@@ -101,8 +101,9 @@ const Profesores = (props) => {
                 </input>
                 */}
 
-                <Button variant="contained" type="submit">Enviar</Button>
-            </form>
+                <Button variant="contained" onClick={()=>nav("/admin")}>Iniciar sesión Admin</Button><br/>
+                <Button variant="contained" onClick={()=>nav("/preguntas")}>Iniciar sesión Usuario</Button>
+            {/* </form> */}
         </div>
     );
 
@@ -111,7 +112,6 @@ const Profesores = (props) => {
             return (
                 <div className="registro">
                     {prueba}
-                    <img className="imgUserProfesores" src={user} onClick={handleClick}></img>
 
                 </div>
 
